@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+	<div class="titlePage">
+		<img src="./imgs/components/loading/loading.jpg" alt="loading" class="titlePageImg" />
+	</div>
+
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			var titlePage = document.querySelector(".titlePage");
+
+			titlePage.classList.add("hide");
+		});
+	</script>
+
+	<div class="header">
+		<img src="./imgs/layout/header/index.png" alt="KAKo">
+	</div>
+
+	<img src="./imgs/pages/index/words.png" alt="words" class="index-describe">
+
+	<img src="../imgs/bg/index/pic.png" alt="pic" class="index-decoration">
+
+	<div class="index-main">
+		<div class="swiper-container hot-theme">
+			<div class="swiper-wrapper theme-list">
+				<?php
+					$query = "select * from card_list";
+					$result = mysql_query($query);
+
+					$rows = mysql_num_rows($result);
+
+					while ($row = mysql_fetch_assoc($result)) {
+						echo '<div class="swiper-slide theme-item">';
+						echo '<img src="'.$row["page1"].'" alt="" id="'.$row["card_id"].'" />';
+						echo '</div>';
+					}
+				?>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-list">
+		<div class="footer-item left select">
+			<img src="./imgs/layout/footer/index_select.png" class="footer-icon">
+			<p class="footer-word">首页</p>
+		</div>
+		<div class="footer-item">
+			<img src="./imgs/layout/footer/catelogue.png" class="footer-icon">
+			<p class="footer-word">分类</p>
+		</div>
+		<div class="footer-item">
+			<img src="./imgs/layout/footer/me.png" class="footer-icon">
+			<p class="footer-word">我</p>
+		</div>
+	</div>
+</body>
+</html>

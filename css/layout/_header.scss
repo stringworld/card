@@ -1,0 +1,21 @@
+.header {
+	width: 100%;
+	height: 65px;
+	@include background(url(../imgs/layout/header/bg.png));
+	overflow: hidden;
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 16.56%;
+	}
+	p {
+		display: block;
+		width: 100%;
+		height: 48px;
+		text-align: center;
+		line-height: 53px;
+		letter-spacing: 5px;
+		font-size: 17.5px;
+		color: #FFF;
+	}
+}

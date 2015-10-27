@@ -1,0 +1,7 @@
+// 最普通的背景
+@mixin background($url) {
+	background: $url;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: 0 0;
+}

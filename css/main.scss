@@ -1,0 +1,17 @@
+// base
+@import "base/reset";
+
+// components
+@import "components/loading";
+
+// utils
+@import "utils/mixin";
+@import "utils/control";
+
+// layout
+@import "layout/bg";
+@import "layout/header";
+@import "layout/footer";
+
+// pages
+@import "pages/index/index";

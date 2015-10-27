@@ -1,0 +1,70 @@
+@charset "utf-8";
+// 内外边距通常让各个浏览器样式的表现位置不同
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+button,
+article,
+section {
+    margin: 0;
+    padding: 0;
+}
+// 去掉strong的字体粗细
+strong {
+    font-weight: 500;
+}
+// 去除默认边框
+fieldset,
+img {
+    border: 0;
+}
+// 一致的 del 样式
+del {
+    text-decoration: line-through;
+}
+// 去掉列表前的标识, li 会继承
+ol,
+ul {
+    list-style: none;
+}
+// 来自 yahoo, 让标题都自定义, 适应多个系统应用
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 500;
+}
+// 默认不显示下划线，保持页面简洁
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+}
+// 去除input默认样式和点击高亮
+input {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+}

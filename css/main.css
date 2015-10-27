@@ -1,0 +1,143 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+button,
+article,
+section {
+  margin: 0;
+  padding: 0; }
+
+strong {
+  font-weight: 500; }
+
+fieldset,
+img {
+  border: 0; }
+
+del {
+  text-decoration: line-through; }
+
+ol,
+ul {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500; }
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none; }
+
+input {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none; }
+
+.titlePage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  background: #FFF;
+  z-index: 2; }
+  .titlePage .titlePageImg {
+    width: 100%;
+    height: 100%; }
+
+.hide {
+  display: none; }
+
+body {
+  background: url(../imgs/bg/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0; }
+
+.header {
+  width: 100%;
+  height: 65px;
+  background: url(../imgs/layout/header/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0;
+  overflow: hidden; }
+  .header img {
+    display: block;
+    margin: 0 auto;
+    width: 16.56%; }
+  .header p {
+    display: block;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    line-height: 53px;
+    letter-spacing: 5px;
+    font-size: 17.5px;
+    color: #FFF; }
+
+.footer-list {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 82px;
+  background: url(../imgs/layout/footer/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0;
+  z-index: 1; }
+  .footer-list .footer-item {
+    float: left;
+    margin: 10px 8.28% 0;
+    width: 15.62%; }
+    .footer-list .footer-item .footer-icon {
+      width: 100%; }
+    .footer-list .footer-item .footer-word {
+      width: 100%;
+      text-align: center;
+      font-size: 12.5px;
+      color: #362e2b; }
+    .footer-list .footer-item.left {
+      margin-left: 10%; }
+    .footer-list .footer-item.select .footer-word {
+      color: #FFF; }
+
+.index-describe {
+  margin-top: 15px;
+  width: 100%; }
+
+.index-decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 55.93%; }
+
+/*# sourceMappingURL=main.css.map */
